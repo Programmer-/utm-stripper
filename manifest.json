@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "UTM Stripper",
+  "version": "1.0",
+  "description": "Automatically cleans tracking parameters from URLs.",
+  "permissions": ["tabs", "webNavigation"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
