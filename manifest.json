@@ -1,10 +1,19 @@
 {
   "manifest_version": 3,
-  "name": "UTM Stripper",
-  "version": "1.0",
-  "description": "Automatically cleans tracking parameters from URLs.",
-  "permissions": ["tabs", "webNavigation"],
-  "background": {
-    "service_worker": "background.js"
+  "name": "Turbo UTM Stripper",
+  "version": "2.0",
+  "description": "Sama utm extension remover",
+  "permissions": [
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "ruleset_1",
+      "enabled": true,
+      "path": "rules.json"
+    }]
   }
 }
